@@ -71,6 +71,30 @@ const defaultGames = [
         image: "https://static0.gamerantimages.com/wordpress/wp-content/uploads/cuphead-review.jpg?w=1200&h=628&fit=crop", 
         approved: true, 
         history: new Array(120, 105, 95) 
+    },
+    { 
+        id: 7, 
+        title: "Pokemon Purpura", 
+        category: "RPG", 
+        mechanic: "Roguelike", 
+        price: 120.00, 
+        verified: true, 
+        isAI: false, 
+        image: "https://www.nintendo.com/eu/media/images/10_share_images/games_15/nintendo_switch_4/2x1_NSwitch_PokemonScarletViolet_Violet_esES_image1600w.jpg", 
+        approved: true, 
+        history: new Array(25, 20, 19) 
+    },
+    { 
+        id: 6, 
+        title: "Slime Rancher", 
+        category: "Acción", 
+        mechanic: "Mundo Abierto", 
+        price: 60.00, 
+        verified: true, 
+        isAI: false, 
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb9F0189uzEYz3rWcv9dB3lUpHkuK3FDEE01riLLK_GrFOZSzhOjL8zPk&s=10", 
+        approved: true, 
+        history: new Array(120, 105, 95) 
     }
 ];
 
