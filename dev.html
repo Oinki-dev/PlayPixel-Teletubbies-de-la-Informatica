@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlayPixel | Portal de Desarrolladores</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">💻 PLAY<span>PIXEL</span> <small style="font-size: 0.8rem; color: var(--accent);">| STUDIO DEV</small></div>
+        <nav class="nav-controls">
+            <a href="index.html"><button class="btn-outline">🏪 Ir a la Tienda</button></a>
+            <a href="admin.html"><button class="btn-outline">🛡️ Panel Admin</button></a>
+        </nav>
+    </header>
+
+    <main style="max-width: 1100px; margin: 2rem auto; padding: 0 2rem;">
+        <h1>Portal del Desarrollador</h1>
+        <p class="subtitle mb-large">Publica tus videojuegos para revisión técnica, gestiona tus precios y monitorea tus ingresos.</p>
+
+        <div class="dev-grid">
+            <div class="filters-panel">
+                <h2>📤 Enviar Juego a Revisión</h2>
+                <div class="form-group">
+                    <label for="devTitle">Título del Juego</label>
+                    <input type="text" id="devTitle" placeholder="Ej. Cyber Andes 2077">
+                </div>
+                <div class="form-group">
+                    <label for="devCategory">Categoría</label>
+                    <select id="devCategory">
+                        <option value="RPG">RPG</option>
+                        <option value="Acción">Acción</option>
+                        <option value="Estrategia">Estrategia</option>
+                        <option value="Indie">Indie</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="devMechanic">Mecánica Principal</label>
+                    <select id="devMechanic">
+                        <option value="Mundo Abierto">Mundo Abierto</option>
+                        <option value="Combate por Turnos">Combate por Turnos</option>
+                        <option value="Multijugador Cooperativo">Multijugador Cooperativo</option>
+                        <option value="Roguelike">Roguelike</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="devPrice">Precio (S/ PEN)</label>
+                    <input type="number" id="devPrice" value="45">
+                </div>
+                <label class="checkbox-label mb-medium">
+                    <input type="checkbox" id="devAi"> Declaro que contiene contenido generado 100% por IA
+                </label>
+                <button class="btn-primary full-width" onclick="uploadGame()">🚀 Subir y Enviar a Revisión Admin</button>
+            </div>
+
+            <div class="filters-panel">
+                <h2>📊 Resumen de Ventas y Visitas (RF5)</h2>
+                <div class="alert alert-info">
+                    Todo archivo subido pasa por un escaneo antivirus automático antes de llegar al Administrador.
+                </div>
+                <p class="stat-item"><strong>Mis Juegos Registrados:</strong> <span id="statGames">0</span></p>
+                <p class="stat-item"><strong>Ingresos Totales Generados:</strong> <span id="statSales">S/ 0.00</span></p>
+            </div>
+        </div>
+
+        <h2>Mis Juegos Enviados y Gestión de Precios (RF6)</h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Juego</th>
+                    <th>Categoría</th>
+                    <th>Estado de Revisión</th>
+                    <th>Precio Actual (S/)</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="devTableBody"></tbody>
+        </table>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>

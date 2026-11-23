@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlayPixel | Panel de Administración y Moderación</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">🛡️ PLAY<span>PIXEL</span> <small style="font-size: 0.8rem; color: var(--warning);">| MODO ADMIN</small></div>
+        <nav class="nav-controls">
+            <a href="index.html"><button class="btn-outline">🏪 Ir a la Tienda</button></a>
+            <a href="dev.html"><button class="btn-outline">💻 Portal Desarrollador</button></a>
+        </nav>
+    </header>
+
+    <main style="max-width: 1100px; margin: 2rem auto; padding: 0 2rem;">
+        <h1>Panel de Moderación y Control de Calidad</h1>
+        <p class="subtitle mb-large">Revisa los juegos enviados por desarrolladores, verifica el estado antivirus y aprueba o rechaza su publicación en el catálogo.</p>
+
+        <div class="dev-grid">
+            <div class="filters-panel">
+                <h2>📊 Métricas de la Plataforma</h2>
+                <p class="stat-item"><strong>Juegos Publicados en Tienda:</strong> <span id="adminApprovedCount">0</span></p>
+                <p class="stat-item"><strong>Pendientes de Revisión:</strong> <span id="adminPendingCount" style="color: var(--warning); font-weight: bold;">0</span></p>
+                <p class="stat-item"><strong>Ventas Totales Registradas:</strong> <span id="statSales">S/ 0.00</span></p>
+            </div>
+            <div class="filters-panel">
+                <h2>🔒 Protocolos de Seguridad Activos</h2>
+                <div class="alert alert-info">
+                    <strong>Escaneo Antivirus:</strong> Automático al subir.<br>
+                    <strong>Control de Transparencia:</strong> Etiquetado obligatorio de contenido IA.
+                </div>
+                <button class="btn-outline btn-small" onclick="resetDemoData()">🔄 Restaurar catálogo de fábrica</button>
+            </div>
+        </div>
+
+        <h2>Bandeja de Revisión y Catálogo Global</h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Juego</th>
+                    <th>Categoría / Mecánica</th>
+                    <th>Origen / Seguridad</th>
+                    <th>Precio (S/)</th>
+                    <th>Estado</th>
+                    <th>Decisión Admin</th>
+                </tr>
+            </thead>
+            <tbody id="adminTableBody"></tbody>
+        </table>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
