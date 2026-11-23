@@ -95,7 +95,7 @@ const defaultGames = [
         image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWIpZacsy4eV8m8HNlwcFGXppgdaS9ib5c20BVswGpomXdnk4CIkUFBwY&s=10", 
         approved: true, 
         history: new Array(120, 105, 95) 
-    }
+    },
 ];
 
 
