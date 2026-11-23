@@ -71,7 +71,7 @@ const defaultGames = [
         image: "https://static0.gamerantimages.com/wordpress/wp-content/uploads/cuphead-review.jpg?w=1200&h=628&fit=crop", 
         approved: true, 
         history: new Array(120, 105, 95) 
-    }
+    },
     { 
         id: 7, 
         title: "Pokemon Purpura", 
@@ -83,7 +83,7 @@ const defaultGames = [
         image: "https://www.nintendo.com/eu/media/images/10_share_images/games_15/nintendo_switch_4/2x1_NSwitch_PokemonScarletViolet_Violet_esES_image1600w.jpg", 
         approved: true, 
         history: new Array(120, 105, 95) 
-    }
+    },
     { 
         id: 8, 
         title: "Slime Rancher", 
