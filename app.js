@@ -32,7 +32,7 @@ const defaultGames = [
         price: 2.50, 
         verified: true, 
         isAI: false, 
-        image: "https://images.steamusercontent.com/ugc/2273816816208351873/494F9570D4164576C052409C8B374964757D23E9/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true", 
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg_ln1erDYO64TOZUJEVl1oRUJUzkjC-XOQK1pMZCqvY1wmpAMkpOKHYsX&s=10", 
         approved: true, 
         history: new Array(35, 35, 29) 
     },
@@ -68,7 +68,31 @@ const defaultGames = [
         price: 60.00, 
         verified: true, 
         isAI: false, 
-        image: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/268910/capsule_616x353.jpg?t=1709068852  ", 
+        image: "https://static0.gamerantimages.com/wordpress/wp-content/uploads/cuphead-review.jpg?w=1200&h=628&fit=crop", 
+        approved: true, 
+        history: new Array(120, 105, 95) 
+    }
+    { 
+        id: 7, 
+        title: "Pokemon Purpura", 
+        category: "Acción", 
+        mechanic: "Mundo Abierto", 
+        price: 120.00, 
+        verified: true, 
+        isAI: false, 
+        image: "https://www.nintendo.com/eu/media/images/10_share_images/games_15/nintendo_switch_4/2x1_NSwitch_PokemonScarletViolet_Violet_esES_image1600w.jpg", 
+        approved: true, 
+        history: new Array(120, 105, 95) 
+    }
+    { 
+        id: 8, 
+        title: "Slime Rancher", 
+        category: "Acción", 
+        mechanic: "Mundo Abierto", 
+        price: 60.00, 
+        verified: true, 
+        isAI: false, 
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWIpZacsy4eV8m8HNlwcFGXppgdaS9ib5c20BVswGpomXdnk4CIkUFBwY&s=10", 
         approved: true, 
         history: new Array(120, 105, 95) 
     }
